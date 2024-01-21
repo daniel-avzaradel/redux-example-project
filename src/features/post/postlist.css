@@ -1,16 +1,17 @@
-section, article {
+.posts, article {
     display: flex;
     flex-direction: column;
     color: #333;
     box-sizing: border-box;
     border-radius: 4px;
+    padding: 2rem;
 }
 
 section {
     text-align: center;
     justify-content: center;
-    padding: 2rem;
     background-color: #d5d5d5;
+    box-sizing: border-box;
 }
 
 article {
@@ -23,4 +24,38 @@ article {
     padding: 1rem;
     border: 1px solid #aaa;
     box-sizing: border-box;
+}
+
+.add-post-form {
+}
+
+.add-post-form, .add-post-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-post-form label {
+    text-align: left;
+}
+
+.add-post-form button {
+    background-color: dodgerblue;
+    color: white;
+    transition: 0.2s ease-in;
+    outline: none;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: rgb(33, 114, 196)
+    }
+}
+
+.add-post-form input, .add-post-form textarea {
+    resize: none;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 4px 1rem;
+    margin-bottom: 10px;
 }

@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectAllPost } from "./postSlice";
 import "./postlist.css";
+import AddPostForm from "./AddPostForm";
 
 const PostsList = () => {
   const posts = useSelector(selectAllPost);
@@ -13,9 +14,11 @@ const PostsList = () => {
   ));
 
   return (
-    <section>
+    <section className="posts">
       <h2>POSTS</h2>
       {renderedPosts}
+      <br />
+      <AddPostForm />
     </section>
   );
 };

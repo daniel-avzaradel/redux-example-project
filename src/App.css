@@ -12,8 +12,12 @@ body {
 
 .app {
   display: flex;
+  flex-direction: column;
   width: 100dvw;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  & > section:first-child {
+    width: 600px;
+  }
 }

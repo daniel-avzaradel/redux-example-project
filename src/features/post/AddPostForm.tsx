@@ -9,7 +9,7 @@ const AddPostForm = () => {
   const contentChange = (e: React.ChangeEvent<HTMLTextAreaElement>) =>
     setContent(e.target.value);
   return (
-    <section>
+    <section className="add-post-form">
       <h2>Add a New Post</h2>
       <form>
         <label htmlFor="postTitle">Post Title:</label>
@@ -26,6 +26,7 @@ const AddPostForm = () => {
           name="postContent"
           value={content}
           onChange={contentChange}
+          rows={8}
         />
         <button type="button">Save Post</button>
       </form>
