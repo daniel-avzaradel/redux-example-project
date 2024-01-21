@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../../app/store";
 
 const initialState = [
     { id: 1, title: "Learning Redux Toolkit", content: "I've heard good things."},
@@ -9,6 +10,8 @@ const postSlice = createSlice({
     name: "posts",
     initialState,
     reducers: {}
-})
+});
+
+export const selectAllPost = (state: RootState) => state.posts
 
 export default postSlice.reducer
