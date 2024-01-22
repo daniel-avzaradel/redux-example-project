@@ -1,5 +1,4 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
-import { RootState } from "../../app/store";
 
 const initialState = [
     { id: 1, title: "Learning Redux Toolkit", content: "I've heard good things."},
