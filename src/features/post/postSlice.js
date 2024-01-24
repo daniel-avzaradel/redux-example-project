@@ -3,6 +3,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 const initialState = [
     { id: 1, title: "Learning Redux Toolkit", content: "I've heard good things."},
     { id: 2, title: "Slices...", content: "The more I slice, the more I want pizza."},
+    { id: 3, title: "Slices2...", content: "Just another slice."},
 ]
 
 const postSlice = createSlice({
