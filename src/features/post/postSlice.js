@@ -5,8 +5,6 @@ const initialState = [
     { id: 2, title: "Slices...", content: "The more I slice, the more I want pizza."},
 ]
 
-console.log(initialState);
-
 const postSlice = createSlice({
     name: "posts",
     initialState,
